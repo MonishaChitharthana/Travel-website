@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderWorld Explorers</title>
+    <link rel="icon" href="/images/W.png" />
+    <link rel="stylesheet" href="buyPlan.css" />
+  </head>
+  <body>
+    <h2>BUY PLAN</h2>
+    <div class="MainContainer">
+      <div class="sub1">
+        <img src="/images/Italy/coloseum.webp" alt="" />
+      </div>
+      <div class="sub2">
+        <h4>ITALY</h4>
+        <p>
+          Italy paints a canvas of ancient wonders and Renaissance splendor,
+          where each corner whispers tales of history, art, and culinary
+          delight.
+        </p>
+        <p style="color: red; font-size: 20px">Cost : $1500</p>
+        <form action="" id="forms">
+          <label for="">How many person : </label>
+          <input type="number" name="" id="people" /><br />
+          <label for="">How many rooms : </label>
+          <input type="number" name="" id="room" /><br />
+          <label for="">How many days : </label>
+          <input type="number" name="" id="day" /><br />
+        </form>
+        <button onclick="Calculate()">CALCULATE COST</button>
+        <p id="amount"></p>
+        <button id="buy">BUY</button>
+        <button>
+          <a
+            href="/travel.html#back4"
+            style="text-decoration: none; color: black"
+            >BROWSE OTHER PLAN</a
+          >
+        </button>
+      </div>
+    </div>
+    <script src="/buyPlan.js"></script>
+  </body>
+</html>

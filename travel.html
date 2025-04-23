@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderWorld Explorers</title>
+    <link rel="stylesheet" href="travel.css" />
+    <link rel="icon" href="/images/W.png" />
+  </head>
+
+  <body>
+    <section class="back1">
+      <header>
+        <nav class="items">
+          <div>
+            <img src="images/W.png" alt="" />
+          </div>
+          <ul id="menuList">
+            <li><a href="">HOME</a></li>
+            <li><a href="#back2">ABOUT</a></li>
+            <li><a href="#back3">SERVICES</a></li>
+            <li><a href="#back4">OFFERS</a></li>
+            <li><a href="#back5">CONTACT</a></li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <label for="checkbox" id="icon"
+              ><img src="/images/menu icon white.png" alt=""
+            /></label>
+          </div>
+        </nav>
+      </header>
+
+      <div class="body1Contents">
+        <p class="content1">Welcome to the world of Travel</p>
+        <p>
+          Let us take you to your Dream <br />
+          <span
+            style="
+              font-weight: bold;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              letter-spacing: 2px;
+            "
+            >DESTINATION</span
+          >
+        </p>
+        <button class="body1Button">Explore</button>
+      </div>
+    </section>
+
+    <section id="back2">
+      <div class="abtCont">
+        <div class="contentsAllText">
+          <h2>ABOUT US</h2>
+          <div class="abtContEx">
+            <h3>Welcome to WanderWorld Explorers!</h3>
+            <p>
+              At WanderWorld Explorers, we believe that travel is more than just
+              visiting new places—it's about creating unforgettable memories,
+              experiencing diverse cultures, and connecting with people from all
+              walks of life. Our mission is to inspire and empower you to
+              explore the world with confidence and curiosity.
+            </p>
+          </div>
+        </div>
+        <div class="gif">
+          <img src="/images/map.gif" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="back3">
+      <a href="/consulting.html">
+        <div class="card card1">
+          <img class="consultImg" src="/images/Consulting2.png" alt="" />
+          <p>CONSULTING</p>
+        </div>
+      </a>
+      <div class="card card2">
+        <img class="consultImg" src="/images/airplane.png" alt="" />
+        <p>TRAVELING</p>
+      </div>
+      <div class="card card3">
+        <img class="consultImg" src="/images/hotel.png" alt="" />
+        <p>HOTEL BOOKING</p>
+      </div>
+    </section>
+
+    <section id="back4">
+      <h2>SPECIAL OFFERS</h2>
+      <p class="offerDis">
+        This section is dedicated to some offers. A few travel plans that we are
+        offering are listed, along with some <br />discounts we wish to
+        introduce. Use these information banners to explore offers.
+      </p>
+      <div class="offerCards">
+        <div class="offerCard up offer1">
+          <p>
+            <b>ITALY</b> <br />
+            Starting from $1500
+          </p>
+          <button class="expBtn"><a href="/buyPlan.html">EXPLORE</a></button>
+        </div>
+        <div class="offerCard up offer2">
+          <p>
+            <b>MALDIVES</b> <br />
+            Starting from $1450
+          </p>
+          <button class="expBtn">EXPLORE</button>
+        </div>
+        <div class="offerCard up offer3">
+          <p>
+            <b>BELGIUM</b> <br />
+            Starting from $1400
+          </p>
+          <button class="expBtn">EXPLORE</button>
+        </div>
+        <div class="offerCard down offer4">
+          <p>
+            <b>CROSTIA</b> <br />
+            Starting from $1000
+          </p>
+          <button class="expBtn">EXPLORE</button>
+        </div>
+        <div class="offerCard down offer5">
+          <p>
+            <b>USA</b> <br />
+            Starting from $2000
+          </p>
+          <button class="expBtn">EXPLORE</button>
+        </div>
+        <div class="offerCard down offer6">
+          <p>
+            <b>BALI</b> <br />
+            Starting from $1200
+          </p>
+          <button class="expBtn">EXPLORE</button>
+        </div>
+        <div class="offerCard down offer7">
+          <p>
+            <b>DUBAI</b> <br />
+            Starting from $2200
+          </p>
+          <button class="expBtn">EXPLORE</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="back5">
+      <div class="contact1">
+        <h2>CONTACT US</h2>
+        <p>
+          We're here to help you plan your next adventure! Whether you have
+          questions about our travel packages, need assistance with bookings, or
+          want to share your travel experiences, feel free to reach out to us.
+          Our dedicated team is available to provide you with personalized
+          support and ensure your travel experience is seamless and enjoyable.
+        </p>
+      </div>
+      <div class="contact2">
+        <h2>OUR CONTACTS</h2>
+        <p><b>Email:</b> support@WanderWorldExplorers.com</p>
+        <p><b>Phone:</b> +123-456-7890</p>
+        <p><b>Address:</b> 123 Travel Lane, WanderWorld City, USA</p>
+      </div>
+      <div class="contact3">
+        <h2>ANY QUESTIONS ?</h2>
+        <form action="/formSubmitted.html" id="myForm">
+          <input
+            type="text"
+            minlength="3"
+            name=""
+            id="name"
+            placeholder="Enter name"
+            pattern="[A-Za-z ]+"
+            required
+          /><br />
+          <input
+            type="text"
+            name=""
+            id="email"
+            placeholder="Enter email"
+            pattern="^[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"
+            required
+          /><br />
+          <textarea
+            name=""
+            rows="4"
+            cols="30"
+            minlength="10"
+            id="message"
+            placeholder="Message"
+            required
+          ></textarea
+          ><br />
+          <button id="submitBtn" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="back6">
+      <p>Contact us through :</p>
+      <img src="/images//whatsapp (1).png" alt="" />
+      <img src="/images/facebook.png" alt="" />
+      <img src="/images/instagram.png" alt="" />
+    </section>
+
+    <script src="/travel.js"></script>
+  </body>
+</html>

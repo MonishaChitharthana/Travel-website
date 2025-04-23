@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body h2{
+    text-align: center;
+    color: #646C79;
+    margin-top: 8vh;
+}
+
+.MainContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub1{
+    flex: 1;
+}
+
+.sub1 img{
+    height: 300px;
+    width: 500px;
+    margin: 10vh 0 0 30vh;
+    border-radius: 20px;
+}
+
+.sub2{
+    flex: 1;
+    margin: 0 20vh 0 10vh;
+    border: 1px solid #646C79;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sub2 h4{
+    text-align: center;
+    color: #646C79;
+}
+
+.sub2 p{
+    line-height: 25px;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sub2 button{
+    padding: 10px;
+    width: 200px;
+    background: rgb(221, 169, 74);
+    border: none;
+}
+
+.sub2 #amount{
+    color: red;
+    font-size: 20px;
+}

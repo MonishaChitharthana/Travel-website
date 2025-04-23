@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWorld Explorers</title>
+    <link rel="icon" href="/images/W.png">
+    <link rel="stylesheet" href="consulting.css">
+</head>
+<body>
+    <h2>CONSULTING</h2>
+    <form action="">
+        <div class="main">
+            <div class="subCategory1">
+                    <label for="" id="toLabel">Enter place : </label>
+                    <input type="name" name="" id="place" required>
+                    <label for="" id="fromLabel">From : </label>
+                    <input type="date" name="" id="from" min='2024-07-16'>
+                    <label for="" id="toLabel">To : </label>
+                    <input type="date" name="" id="to">
+                    <label for="">Select Mode of Transport : </label>
+                    <select name="" id="">
+                        <option value="0"></option>
+                        <option value="car">Car</option>
+                        <option value="flight">Flight</option>
+                        <option value="cruise">Cruise</option>
+                    </select>
+            </div>
+            <h2>Discover your new Favourite Stay</h2>
+            <div class="subCategory2">
+                <div class="card apartmentCard">
+                    <p>Apartment</p>
+                </div>
+                <div class="card hotelCard">  
+                    <p>Hotel</p>
+                </div>            
+                <div class="card boatCard">  
+                    <p>Boat house</p>
+                </div>            
+                <div class="card villaCard">  
+                    <p>Villa</p>
+                </div>
+            </div>
+        </div>
+        <input type="text" name="" id="emailConsult" placeholder="Enter your Email" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9._+\-']+\.[A-za-z]{2,}" required>
+        <button id="consultButton" style="margin: 5vh 0 0 5vh;">CONSULT</button>
+    </form>
+    <script>
+        document.getElementById("consultButton").addEventListener("click", function() {
+            var emailInput = document.getElementById("emailConsult");
+            if (!emailInput.checkValidity()) {
+                emailInput.reportValidity();
+                return;
+            }
+
+            window.alert("We will get back to you shortly")
+            var form = document.getElementById("consultForm");
+            form.submit(); 
+            form.reset(); 
+        });
+
+
+        // date
+        
+        var today = new Date();
+        var date = today.getDate();
+        var month = today.getMonth()+1;
+        var year = today.getFullYear();
+        
+        var todayDate = year+'-'+month+'-'+date;
+        document.getElementById("from").setAttribute("min",todayDate);
+        
+    </script>
+</body>
+</html>
